@@ -5,22 +5,22 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CfCppCli", "CfCppCli\CfCppCli.vcxproj", "{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudFilterConsoleApp", "CloudFilterConsoleApp\CloudFilterConsoleApp.csproj", "{03349331-13C7-4747-99A3-1665B2350CF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Debug|x64.ActiveCfg = Debug|x64
 		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Debug|x64.Build.0 = Debug|x64
-		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Debug|x86.ActiveCfg = Debug|Win32
-		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Debug|x86.Build.0 = Debug|Win32
-		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Release|x64.ActiveCfg = Release|x64
+		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Release|x64.ActiveCfg = Debug|x64
 		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Release|x64.Build.0 = Release|x64
-		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Release|x86.ActiveCfg = Release|Win32
-		{B4FE732C-ECBD-4345-9EF8-5C8FDC69EF71}.Release|x86.Build.0 = Release|Win32
+		{03349331-13C7-4747-99A3-1665B2350CF7}.Debug|x64.ActiveCfg = Debug|x64
+		{03349331-13C7-4747-99A3-1665B2350CF7}.Debug|x64.Build.0 = Debug|x64
+		{03349331-13C7-4747-99A3-1665B2350CF7}.Release|x64.ActiveCfg = Debug|x64
+		{03349331-13C7-4747-99A3-1665B2350CF7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

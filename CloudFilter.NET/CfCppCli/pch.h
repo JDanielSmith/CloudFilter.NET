@@ -8,5 +8,9 @@
 #define PCH_H
 
 // add headers that you want to pre-compile here
+#include <windows.h>
+
+#include <cfapi.h>
+#pragma comment(lib, "CldApi")
 
 #endif //PCH_H
