@@ -153,9 +153,17 @@ namespace JDanielSmith
 					const pin_ptr<const wchar_t> pProviderVersion = PtrToStringChars(registration->ProviderVersion);
 					Registration.ProviderVersion = pProviderVersion;
 
-					const pin_ptr<System::Byte> pSyncRootIdentity = &(registration->SyncRootIdentity[0]);   // pin pointer to first element in arr
+					pin_ptr<System::Byte> pSyncRootIdentity = nullptr;
+					if (registration->SyncRootIdentity != nullptr)
+					{
+						pSyncRootIdentity = &(registration->SyncRootIdentity[0]);   // pin pointer to first element in arr
+						Registration.SyncRootIdentityLength = registration->SyncRootIdentity->Length;
+					}
+					else
+					{
+						Registration.SyncRootIdentityLength = 0;
+					}
 					Registration.SyncRootIdentity = reinterpret_cast<LPCVOID>(pSyncRootIdentity);
-					Registration.SyncRootIdentityLength = registration->SyncRootIdentity->Length;
 
 					// https://docs.microsoft.com/en-us/cpp/dotnet/how-to-convert-between-system-guid-and-guid?view=vs-2019
 					array<System::Byte>^ providerIdData = (registration->ProviderId).ToByteArray();

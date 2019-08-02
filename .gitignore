@@ -37,6 +37,9 @@
 Browse.VC.db
 *.log
 *.tlog
+*.db
+*.ide
+.vs/
 
 *.metagen
 *.cache

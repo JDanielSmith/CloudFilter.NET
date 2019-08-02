@@ -14,7 +14,10 @@ namespace CloudFilterConsoleApp
 		{
 			var platformInfo = CloudFilter.GetPlatformInfo();
 
-			var syncRegistration = new SyncRegistration();
+			var registration = new SyncRegistration();
+			var policies = new SyncPolicies();
+			var registerFlags = RegisterFlags.None;
+			CloudFilter.RegisterSyncRoot(@"C:\Users\JDani\SyncRoot", registration, policies, registerFlags);
 		}
 	}
 }
