@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <cfapi.h>
 
-#using "System.dll"
+#using <System.dll>
 
 namespace JDanielSmith
 {
@@ -27,7 +27,7 @@ namespace JDanielSmith
 				static void UnregisterSyncRoot(System::String^ syncRootPath);
 
 				// https://docs.microsoft.com/en-us/windows/win32/api/cfapi/nf-cfapi-cfclosehandle
-				static void CloseHandle(HANDLE fileHandle);
+				static void CloseHandle(System::IntPtr fileHandle);
 
 				// https://docs.microsoft.com/en-us/windows/win32/api/cfapi/nf-cfapi-cfgetplatforminfo
 				static PlatformInfo^ GetPlatformInfo();

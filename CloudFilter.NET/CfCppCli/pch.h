@@ -13,4 +13,8 @@
 #include <cfapi.h>
 #pragma comment(lib, "CldApi")
 
+#include <vcclr.h>
+
+#using <System.dll>
+
 #endif //PCH_H

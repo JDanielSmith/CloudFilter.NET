@@ -20,7 +20,8 @@ void Cf::UnregisterSyncRoot(System::String^ syncRootPath)
 }
 
 // https://docs.microsoft.com/en-us/windows/win32/api/cfapi/nf-cfapi-cfclosehandle
-void Cf::CloseHandle(HANDLE fileHandle)
+void Cf::CloseHandle(System::IntPtr fileHandle)
 {
-	CfCloseHandle(fileHandle);
+	auto const handle = static_cast<HANDLE>(fileHandle.ToPointer());
+	CfCloseHandle(handle);
 }
