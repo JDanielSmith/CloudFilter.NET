@@ -48,4 +48,6 @@ Browse.VC.db
 
 **/Debug/*
 **/Release/*
+**/obj/*
+**/bin/*
 
